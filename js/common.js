@@ -11,14 +11,32 @@
 // });
 
 var topLine = $(".top-line");
+var mainContent = $("main");
 var offSet = $(".top-line").offset();
-console.log(offSet);
+var isFixed = false;
 
 $(window).scroll(function() {
-  if( $(this).scrollTop() > offSet.top) {
+  debugger;
+  if( $(this).scrollTop() > offSet.top && offSet.top != 0) {
     topLine.addClass("top-line-fixed");
-  } else {
+
+    if(!isFixed) {
+      var offsetTop = parseInt(mainContent.css("margin-top"));
+      offsetTop += parseInt(topLine.outerHeight());
+      mainContent.css("margin-top", offsetTop);
+      isFixed = true;
+    }
+
+  } else if(offSet.top != 0){
+
+    if(isFixed) {
+      var offsetTop = parseInt(mainContent.css("margin-top"));
+      offsetTop -= parseInt(topLine.outerHeight());
+      mainContent.css("margin-top", offsetTop);
+    }
+
     topLine.removeClass("top-line-fixed");
+    isFixed = false;
   }
 });
 
