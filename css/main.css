@@ -21,16 +21,23 @@ ul {
   min-width: 980px; }
 
 .top-nav {
-  height: 68px;
+  height: 55px;
   font-size: 11px;
   font-weight: bold;
   background-color: #fff;
   text-align: center;
-  padding-top: 20px;
-  border-bottom: 1px solid #f1f1f1; }
+  padding-top: 16px;
+  border-bottom: 1px solid #f1f1f1;
+  position: relative; }
+  .top-nav .fa {
+    left: 27px;
+    position: absolute;
+    font-size: 38px;
+    top: 12px;
+    cursor: pointer; }
   .top-nav ul {
     display: inline-block;
-    margin-bottom: 13px; }
+    margin-bottom: 8px; }
     .top-nav ul li {
       margin-right: 40px; }
       .top-nav ul li:last-child {
