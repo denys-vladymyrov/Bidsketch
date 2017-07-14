@@ -33,7 +33,7 @@ ul {
     left: 27px;
     position: absolute;
     font-size: 38px;
-    top: 12px;
+    top: 15px;
     cursor: pointer; }
   .top-nav ul {
     display: inline-block;
@@ -89,8 +89,11 @@ ul {
   position: relative;
   display: inline-block;
   margin-right: 25px;
-  margin-top: 5px;
   vertical-align: top; }
+
+.comment__icon {
+  color: #ccc;
+  font-size: 30px; }
 
 .comment__count {
   font-size: 11px;
@@ -102,7 +105,7 @@ ul {
   color: #fff;
   position: absolute;
   right: -9px;
-  top: -5px; }
+  top: 0; }
 
 .btn {
   width: 125px;
