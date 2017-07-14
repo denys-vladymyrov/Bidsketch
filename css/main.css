@@ -47,6 +47,8 @@ ul {
       .top-nav ul li a {
         color: #b1b1b1;
         text-decoration: none; }
+        .top-nav ul li a:hover {
+          color: #265b63; }
   .top-nav .progress {
     width: 315px;
     height: 6px;
@@ -100,7 +102,8 @@ ul {
 .top-line__center {
   line-height: 36px; }
   .top-line__center .btn-transparent {
-    margin-left: 20px; }
+    margin-left: 20px;
+    vertical-align: top; }
 
 .top-line__title {
   font-size: 14px;

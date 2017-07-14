@@ -1,14 +1,4 @@
-// var  mn = $(".top-line");
-// mns = "main-nav-scrolled";
-// hdr = $('header').height();
-//
-// $(window).scroll(function() {
-//   if( $(this).scrollTop() > hdr ) {
-//     mn.addClass(mns);
-//   } else {
-//     mn.removeClass(mns);
-//   }
-// });
+
 
 var topLine = $(".top-line");
 var mainContent = $("main");
@@ -16,7 +6,7 @@ var offSet = $(".top-line").offset();
 var isFixed = false;
 
 $(window).scroll(function() {
-  debugger;
+
   if( $(this).scrollTop() > offSet.top && offSet.top != 0) {
     topLine.addClass("top-line-fixed");
 
@@ -47,12 +37,11 @@ function moveProgressBar(animationDelay = 0) {
   var progressTotal = getPercent * getProgressWrapWidth;
   var animationLength = 100;
 
-  // on page load, animate percentage bar to data percentage length
-  // .stop() used to prevent animation queueing
   $('.progress-bar').stop().delay(animationDelay).animate({
     left: progressTotal
   }, animationLength);
 }
+
 
 function countActiveNavLi(){
   var activeNavLi = 0;
@@ -65,6 +54,7 @@ function countActiveNavLi(){
 
   return activeNavLi;
 }
+
 
 function setProgressBarPercent(animationDelay = 0){
   var progress  = $('.progress-wrap');
