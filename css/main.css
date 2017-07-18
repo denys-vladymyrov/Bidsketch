@@ -79,15 +79,27 @@ ul {
       top: 0; }
 
 .top-line {
-  padding: 16px 0 16px 0;
   text-align: center;
   position: relative;
   background-color: #fff;
   -webkit-box-shadow: -1px 3px 20px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: -1px 3px 20px 0 rgba(0, 0, 0, 0.05);
-  height: 36px; }
+  box-shadow: -1px 3px 20px 0 rgba(0, 0, 0, 0.05); }
   .top-line .btn-default {
     margin-right: 5px; }
+
+.top-line-fees {
+  background-color: #fff;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  font-size: 11px;
+  color: #58b1bd;
+  border-bottom: 1px solid #f1f1f1;
+  display: none; }
+
+.top-line-main {
+  padding: 16px 0 16px 0;
+  height: 36px; }
 
 .top-line-fixed {
   position: fixed;

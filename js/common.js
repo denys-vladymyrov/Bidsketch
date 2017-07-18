@@ -2,8 +2,9 @@
 
 var topLine = $(".top-line");
 var mainContent = $("main");
-var offSet = $(".top-line").offset();
+var offSet = $(".top-line-main").offset();
 var isFixed = false;
+var topLineFees = $(".top-line-fees");
 
 $(window).scroll(function() {
 
@@ -11,8 +12,9 @@ $(window).scroll(function() {
     topLine.addClass("top-line-fixed");
 
     if(!isFixed) {
+      topLineFees.show();
       var offsetTop = parseInt(mainContent.css("margin-top"));
-      offsetTop += parseInt(topLine.outerHeight());
+      offsetTop += parseInt(topLine.outerHeight() - topLineFees.outerHeight());
       mainContent.css("margin-top", offsetTop);
       isFixed = true;
     }
@@ -20,7 +22,8 @@ $(window).scroll(function() {
   } else if(offSet.top != 0){
 
     if(isFixed) {
-      var offsetTop = parseInt(mainContent.css("margin-top"));
+      topLineFees.hide();
+      var offsetTop = parseInt(mainContent.css("margin-top") + topLineFees.outerHeight());
       offsetTop -= parseInt(topLine.outerHeight());
       mainContent.css("margin-top", offsetTop);
     }
