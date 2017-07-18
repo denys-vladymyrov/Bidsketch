@@ -14,7 +14,7 @@ $(window).scroll(function() {
     if(!isFixed) {
       topLineFees.show();
       var offsetTop = parseInt(mainContent.css("margin-top"));
-      offsetTop += parseInt(topLine.outerHeight() - topLineFees.outerHeight());
+      offsetTop += parseInt(topLine.outerHeight());
       mainContent.css("margin-top", offsetTop);
       isFixed = true;
     }
@@ -23,7 +23,7 @@ $(window).scroll(function() {
 
     if(isFixed) {
       topLineFees.hide();
-      var offsetTop = parseInt(mainContent.css("margin-top") + topLineFees.outerHeight());
+      var offsetTop = parseInt(mainContent.css("margin-top")) - topLineFees.outerHeight();
       offsetTop -= parseInt(topLine.outerHeight());
       mainContent.css("margin-top", offsetTop);
     }
