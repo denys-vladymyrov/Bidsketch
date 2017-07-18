@@ -113,6 +113,10 @@ ul {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: left; }
+  .top-line__left .btn-transparent {
+    vertical-align: top; }
+  .top-line__left ul li {
+    margin-top: 5px; }
 
 .top-line__right {
   float: right;
@@ -148,8 +152,7 @@ ul {
   font-weight: bold;
   position: relative;
   display: inline-block;
-  margin-right: 25px;
-  top: 2px; }
+  margin-right: 25px; }
 
 .comment__count {
   font-size: 11px;
@@ -166,7 +169,7 @@ ul {
 
 .collaborators-wrap {
   display: inline-block;
-  margin-right: 15px; }
+  margin-right: 20px; }
 
 .btn {
   width: 125px;
@@ -324,4 +327,6 @@ main {
 .nav-footer__select {
   border: 0;
   padding-right: 10px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-right: 15px;
+  color: #7f7e7e; }
