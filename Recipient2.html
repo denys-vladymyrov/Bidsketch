@@ -12,7 +12,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
 
@@ -28,19 +27,33 @@
 
         <button class="btn btn-demo">Start Your <strong>Free 13-Days Trial</strong></button>
       </div>
+
       <div class="top-line">
-        <div class="top-line__left">
-          <div class="comment">
-            <img src="img/comment.svg" class="comment__icon" alt="comment">
-            <div class="comment__count">
-              1
-            </div>
-          </div>
-          <button class="btn btn-transparent"><i class="fa fa-file" aria-hidden="true"></i><span>View as PDF</span></button>
+        <div class="top-line-fees">
+          Fees
         </div>
-        <button class="btn btn-default"><span>Accept</span></button>
-        <button class="btn btn-decline"><span>Decline</span></button>
-        <button class="btn-close" title="Close">×</button>
+        <div class="top-line-main">
+          <div class="top-line__left">
+            <ul>
+              <li>
+                <div class="comment">
+                  <img src="img/comment.svg" class="comment__icon" alt="comment">
+                  <div class="comment__count">
+                    1
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="btn btn-transparent"><i class="fa fa-file" aria-hidden="true"></i><span>View as PDF</span></button>
+          </div>
+          <div class="top-line__center">
+            <button class="btn btn-default">Accept</button>
+            <button class="btn btn-decline">Decline</button>
+          </div>
+          <div class="top-line__right">
+            <button class="btn-close" title="Close">×</button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -50,7 +63,29 @@
 
 
 
-    <!--<h1>test</h1>-->
+    <div class="nav-footer">
+      <div class="nav-footer__right">
+        <div class="nav-footer__btn">
+          <a href="#">
+            <span class="arrow bottom"></span>
+          </a>
+        </div>
+        <div class="nav-footer__btn">
+          <a href="#">
+            <span class="arrow top"></span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-footer__center">
+        <select class="nav-footer__select">
+          <option>Client's Goals and Objectives</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <button class="btn btn-transparent">Page Breaks</button>
+      </div>
+    </div>
 
 
   </div>
