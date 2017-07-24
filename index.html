@@ -12,6 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/spectrum.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
 
@@ -46,18 +47,50 @@
         Fees
       </div>
 
-      <div class="top-line-main section-design-main">
+      <div class="section-design-main top-line-main">
         <div class="section-design__left">
           <h3 class="design-left__title">
             Background
           </h3>
+          <ul class="select-container">
+            <li>
+              <span>Image</span>
+              <input type='text' class="color-picker">
+            </li>
+            <li>
+              <span>Cover</span>
+              <input type='text' class="color-picker">
+            </li>
+          </ul>
         </div>
         <div class="section-design__center">
-          <select class="section-design__select">
+          <select class="section-design__select heading-select">
             <option>Headings</option>
             <option>Subheadings</option>
             <option>Content</option>
           </select>
+          <ul class="select-container">
+            <li>
+              <span>Fonts</span>
+              <select class="section-design__select font-select">
+                <option>Proxima Nova ...</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </li>
+            <li>
+              <span>Size</span>
+              <select class="section-design__select size-select">
+                <option>12</option>
+                <option>13</option>
+                <option>15</option>
+              </select>
+            </li>
+            <li>
+              <span>Color</span>
+              <input type='text' class="color-picker">
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -65,6 +98,8 @@
   </header>
 
   <main>
+
+
 
   </main>
 
@@ -94,9 +129,6 @@
   </div>
 
 
-
-
-
 </div>
 
 
@@ -115,11 +147,16 @@
 
 <script src="libs/jquery/jquery-3.1.1.min.js"></script>
 <script src="libs/jquery.nice-select.min.js"></script>
+<script src="libs/spectrum.js"></script>
 <script src="js/common.js"></script>
 
 <script>
   $('.section-design__select').niceSelect();
 </script>
-
+<script>
+  $(".color-picker").spectrum({
+    color: "#f46d6c"
+  });
+</script>
 </body>
 </html>

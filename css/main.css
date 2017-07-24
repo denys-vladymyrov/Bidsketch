@@ -372,25 +372,45 @@ main {
 
 .section-design__left {
   width: 260px;
-  text-align: left;
   padding-left: 20px;
   float: left; }
 
-.section-design-main h3 {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #737272; }
+.section-design-main {
+  height: 130px;
+  text-align: left;
+  padding: 0; }
+  .section-design-main h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #737272;
+    margin-bottom: 20px; }
 
 .section-design__center {
   float: left;
-  padding-left: 25px; }
+  padding-left: 25px;
+  max-width: 800px;
+  width: 100%; }
+  .section-design__center .select-container {
+    max-width: 580px;
+    width: 100%; }
 
 .section-design__select {
   border: 0;
   color: #737272;
   font-size: 14px;
   padding-right: 5px; }
+
+.select-container li {
+  margin-right: 15px; }
+  .select-container li:last-child {
+    margin-right: 0; }
+  .select-container li > span {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    color: #737272;
+    margin-bottom: 10px; }
 
 .nice-select {
   -webkit-tap-highlight-color: transparent;
@@ -400,9 +420,8 @@ main {
   clear: both;
   cursor: pointer;
   display: block;
-  float: left;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
   height: 42px;
   line-height: 40px;
@@ -422,7 +441,9 @@ main {
 .nice-select:hover {
   border-color: #dbdbdb; }
 
-.nice-select:active, .nice-select.open, .nice-select:focus {
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
   border-color: #999; }
 
 .nice-select:after {
@@ -433,7 +454,7 @@ main {
   border-right: 5px solid transparent;
   margin-bottom: 2px;
   border-top: 5px solid #737272;
-  top: 18px;
+  top: 17px;
   right: 0; }
 
 .nice-select.open .list {
@@ -539,3 +560,34 @@ main {
 .nice-select .option.selected {
   background-color: #49a3af;
   color: #fff; }
+
+.nice-select .current {
+  text-transform: uppercase; }
+
+.font-select {
+  width: 385px;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #e1e1e1;
+  padding: 0 5px 0 10px; }
+  .font-select .current {
+    text-transform: none; }
+  .font-select:after {
+    right: 5px;
+    top: 13px; }
+  .font-select .list {
+    width: 385px; }
+
+.heading-select {
+  width: 95px;
+  margin-bottom: 7px; }
+
+.size-select {
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #e1e1e1;
+  padding: 0 5px 0 10px;
+  width: 80px; }
+  .size-select:after {
+    right: 5px;
+    top: 13px; }
