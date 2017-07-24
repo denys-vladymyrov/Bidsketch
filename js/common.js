@@ -49,7 +49,7 @@ function moveProgressBar(animationDelay = 0) {
 function countActiveNavLi(){
   var activeNavLi = 0;
 
-  $(".nav-list li").each(function( index ) {
+  $(".nav-list-progress li").each(function( index ) {
     if($(this).hasClass("active")){
       activeNavLi++;
     }
@@ -81,7 +81,7 @@ function setProgressBarPercent(animationDelay = 0){
 
 setProgressBarPercent();
 
-$(".nav-list li a").on("mouseenter", function(){
+$(".nav-list-progress li a").on("mouseenter", function(){
   var progress  = $('.progress-wrap');
 
   switch ($(this).parent('li').index()){
