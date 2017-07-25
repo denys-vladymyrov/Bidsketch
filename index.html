@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/spectrum.css">
+  <link rel="stylesheet" type="text/css" href="css/selectric.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
 
@@ -25,72 +25,64 @@
   <header>
     <div class="top-nav">
       <div class="nav-wrap">
-        <div class="top-nav__center">
-          <ul class="nav-list-menu">
-            <li class="active"><a href="">Cover page</a></li>
-            <li><a href="">Content page</a></li>
-          </ul>
-        </div>
-        <div class="top-nav__right">
-          <button class="btn btn-transparent btn-noborder">
-            <span>Discard changes</span>
-          </button>
-          <span>or</span>
-          <button class="btn btn-default">Apply &amp; Close</button>
+        <img src="img/angle-left.svg" class="angle-left" alt="angle-left">
+        <ul class="nav-list-progress">
+          <li class="active"><a href="#">Basics</a></li>
+          <li class="active"><a href="#">Opening</a></li>
+          <li class="active"><a href="#">Fees</a></li>
+          <li><a href="#">Closing</a></li>
+          <li><a href="#">Preview</a></li>
+        </ul>
+        <div class="progress-wrap progress" data-progress-percent="73">
+          <div class="progress-bar progress"></div>
         </div>
       </div>
     </div>
 
-    <div class="top-line section-design">
+    <div class="top-line">
 
       <div class="top-line-fees">
         Fees
       </div>
 
-      <div class="section-design-main top-line-main">
-        <div class="section-design__left">
-          <h3 class="design-left__title">
-            Background
-          </h3>
-          <ul class="select-container">
+      <div class="top-line-main">
+        <div class="top-line__left">
+
+          <ul>
             <li>
-              <span>Image</span>
-              <input type='text' class="color-picker">
+              <div class="comment">
+                <img src="img/comment.svg" class="comment__icon" alt="comment">
+                <div class="comment__count">
+                  1
+                </div>
+              </div>
             </li>
             <li>
-              <span>Cover</span>
-              <input type='text' class="color-picker">
+              <div class="collaborators-wrap">
+                <img src="img/collaborators.svg" alt="collaborators">
+              </div>
             </li>
           </ul>
+
+          <button class="btn btn-transparent">
+            <img src="img/file.svg" class="file-icon" alt="file">
+            <span>View as PDF</span>
+          </button>
         </div>
-        <div class="section-design__center">
-          <select class="section-design__select heading-select">
-            <option>Headings</option>
-            <option>Subheadings</option>
-            <option>Content</option>
+        <div class="top-line__center">
+          <span class="top-line__title">Choose design</span>
+          <select class="top-line__select">
+            <option>Theme Name</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
           </select>
-          <ul class="select-container">
-            <li>
-              <span>Fonts</span>
-              <select class="section-design__select font-select">
-                <option>Proxima Nova ...</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-            </li>
-            <li>
-              <span>Size</span>
-              <select class="section-design__select size-select">
-                <option>12</option>
-                <option>13</option>
-                <option>15</option>
-              </select>
-            </li>
-            <li>
-              <span>Color</span>
-              <input type='text' class="color-picker">
-            </li>
-          </ul>
+          <button class="btn btn-transparent">
+            <img src="img/4.svg" alt="pencil">
+            Customize</button>
+        </div>
+        <div class="top-line__right">
+          <button class="btn btn-default">Save Changes</button>
         </div>
       </div>
 
@@ -98,8 +90,6 @@
   </header>
 
   <main>
-
-
 
   </main>
 
@@ -129,6 +119,9 @@
   </div>
 
 
+
+
+
 </div>
 
 
@@ -146,17 +139,11 @@
 <![endif]-->
 
 <script src="libs/jquery/jquery-3.1.1.min.js"></script>
-<script src="libs/jquery.nice-select.min.js"></script>
-<script src="libs/spectrum.js"></script>
+<script src="libs/jquery.selectric.js"></script>
 <script src="js/common.js"></script>
+<script>
+  $('select').selectric();
+</script>
 
-<script>
-  $('.section-design__select').niceSelect();
-</script>
-<script>
-  $(".color-picker").spectrum({
-    color: "#f46d6c"
-  });
-</script>
 </body>
 </html>
