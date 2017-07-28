@@ -127,3 +127,7 @@ $(".discard-btn").on("click", function () {
   $(".design-header").hide();
   $(".main-header").show();
 });
+
+$(".btn-chose-theme").on("click", function () {
+  $(".theme-header").toggle();
+});

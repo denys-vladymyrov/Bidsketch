@@ -510,7 +510,8 @@ main {
   .selectric-top-line__select .selectric {
     border: 0; }
 
-.design-header {
+.design-header,
+.theme-header {
   display: none; }
 
 .btn-arrow:hover:after {
@@ -571,3 +572,9 @@ main {
   margin-top: 15px;
   color: #7f7e7e;
   font-size: 14px; }
+
+@media (max-width: 1299px) {
+  .theme-item {
+    margin-bottom: 20px; }
+  .theme-header {
+    height: 380px; } }
