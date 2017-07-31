@@ -136,8 +136,8 @@ $(".btn-chose-theme").on("click", function () {
 $('#tabs-nav a').on('click', function (event) {
 
   event.preventDefault();
-
-  $('.active').removeClass('active');
+  
+  $(this).closest('#tabs-nav').find('.active').removeClass('active');
   $(this).parent().addClass('active');
   $('.tabs-stage > div').hide();
   $($(this).attr('href')).show();
