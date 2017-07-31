@@ -464,10 +464,11 @@ main {
     text-align: right; }
 
 .selectric-items {
-  border: 0; }
+  border: 0;
+  background-color: #fff; }
   .selectric-items ul li {
     margin-right: 0;
-    padding-left: 40px; }
+    padding-left: 20px; }
     .selectric-items ul li.highlighted {
       background-color: #49a3af;
       color: #fff; }
@@ -483,7 +484,7 @@ main {
     text-align: left; }
 
 .selectric-heading-select {
-  width: 115px;
+  width: 125px;
   margin-bottom: 14px;
   margin-top: 3px; }
   .selectric-heading-select .label {
@@ -550,8 +551,8 @@ main {
 .theme-item__panel {
   height: 120px;
   padding-top: 15px;
-  -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15); }
+  -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1); }
 
 .theme-heading-text {
   font-size: 16px;
@@ -571,10 +572,20 @@ main {
 .theme-name {
   margin-top: 15px;
   color: #7f7e7e;
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: bold; }
+
+.sp-input {
+  background-color: #fff; }
 
 @media (max-width: 1299px) {
   .theme-item {
     margin-bottom: 20px; }
   .theme-header {
     height: 380px; } }
+
+.tabs-stage .tab {
+  display: none; }
+
+.tabs-stage .tab:first-child {
+  display: block; }

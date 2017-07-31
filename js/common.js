@@ -131,3 +131,15 @@ $(".discard-btn").on("click", function () {
 $(".btn-chose-theme").on("click", function () {
   $(".theme-header").toggle();
 });
+
+
+$('#tabs-nav a').on('click', function (event) {
+
+  event.preventDefault();
+
+  $('.active').removeClass('active');
+  $(this).parent().addClass('active');
+  $('.tabs-stage > div').hide();
+  $($(this).attr('href')).show();
+});
+

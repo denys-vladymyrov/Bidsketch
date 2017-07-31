@@ -743,7 +743,7 @@
       // Set a temporary class on the hidden parent of the element
       var hiddenChildren = _this.elements.items.closest(':visible').children(':hidden').addClass(_this.classes.tempshow);
       var maxHeight = _this.options.maxHeight;
-      var itemsWidth = _this.elements.items.outerWidth() - 40;
+      var itemsWidth = _this.elements.items.outerWidth();
       var wrapperWidth = _this.elements.wrapper.outerWidth() - (itemsWidth - _this.elements.items.width());
 
       // Set the dimensions, minimum is wrapper width, expand for long items if option is true

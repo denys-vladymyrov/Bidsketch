@@ -97,9 +97,9 @@
         <div class="nav-wrap">
 
           <div class="top-nav__center">
-            <ul class="nav-list-menu">
-              <li class="active"><a href="">Cover page</a></li>
-              <li><a href="">Content page</a></li>
+            <ul id="tabs-nav" class="nav-list-menu">
+              <li class="active"><a href="#tab-1">Cover page</a></li>
+              <li><a href="#tab-2">Content page</a></li>
             </ul>
           </div> <!-- ends top-nav__center -->
 
@@ -121,50 +121,102 @@
         </div>
 
         <div class="section-design-main top-line-main">
-          <div class="section-design__left">
-            <h3 class="design-left__title">
-              Background
-            </h3>
-            <ul class="select-container">
-              <li>
-                <span>Image</span>
-                <input type='text' class="color-picker">
-              </li>
-              <li>
-                <span>Cover</span>
-                <input type='text' class="color-picker">
-              </li>
-            </ul>
-          </div>
-          <div class="section-design__center">
-            <select class="section-design__select heading-select">
-              <option>Headings</option>
-              <option>Subheadings</option>
-              <option>Content</option>
-            </select>
-            <ul class="select-container">
-              <li>
-                <span>Fonts</span>
-                <select class="section-design__select font-select">
-                  <option>Proxima Nova ...</option>
-                  <option>2</option>
-                  <option>3</option>
+          <div class="tabs-stage">
+            <div id="tab-1" class="tab">
+              <div class="section-design__left">
+                <h3 class="design-left__title">
+                  Background
+                </h3>
+                <ul class="select-container">
+                  <li>
+                    <span>Image</span>
+                    <input type='text' class="color-picker">
+                  </li>
+                  <li>
+                    <span>Cover</span>
+                    <input type='text' class="color-picker">
+                  </li>
+                </ul>
+              </div>
+              <div class="section-design__center">
+                <select class="section-design__select heading-select">
+                  <option>Headings</option>
+                  <option>Subheadings</option>
+                  <option>Content</option>
                 </select>
-              </li>
-              <li>
-                <span>Size</span>
-                <select class="section-design__select size-select">
-                  <option>12</option>
-                  <option>13</option>
-                  <option>15</option>
+                <ul class="select-container">
+                  <li>
+                    <span>Fonts</span>
+                    <select class="section-design__select font-select">
+                      <option>Proxima Nova ...</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </li>
+                  <li>
+                    <span>Size</span>
+                    <select class="section-design__select size-select">
+                      <option>12</option>
+                      <option>13</option>
+                      <option>15</option>
+                    </select>
+                  </li>
+                  <li>
+                    <span>Color</span>
+                    <input type='text' class="color-picker">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="tab-2" class="tab">
+              <div class="section-design__left">
+                <h3 class="design-left__title">
+                  Background 2
+                </h3>
+                <ul class="select-container">
+                  <li>
+                    <span>Image</span>
+                    <input type='text' class="color-picker">
+                  </li>
+                  <li>
+                    <span>Cover</span>
+                    <input type='text' class="color-picker">
+                  </li>
+                </ul>
+              </div>
+              <div class="section-design__center">
+                <select class="section-design__select heading-select">
+                  <option>Headings</option>
+                  <option>Subheadings</option>
+                  <option>Content</option>
                 </select>
-              </li>
-              <li>
-                <span>Color</span>
-                <input type='text' class="color-picker">
-              </li>
-            </ul>
+                <ul class="select-container">
+                  <li>
+                    <span>Fonts</span>
+                    <select class="section-design__select font-select">
+                      <option>Proxima Nova ...</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </li>
+                  <li>
+                    <span>Size</span>
+                    <select class="section-design__select size-select">
+                      <option>12</option>
+                      <option>13</option>
+                      <option>15</option>
+                    </select>
+                  </li>
+                  <li>
+                    <span>Color</span>
+                    <input type='text' class="color-picker">
+                  </li>
+                </ul>
+              </div>
+            </div>
+
           </div>
+
         </div>
 
       </div>
@@ -287,7 +339,9 @@
 <script>
   $('select').selectric();
   $(".color-picker").spectrum({
-    color: "#f46d6c"
+    color: "#f46d6c",
+    preferredFormat: "hex",
+    showInput: true
   });
 </script>
 
