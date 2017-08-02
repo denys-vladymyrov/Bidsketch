@@ -42,8 +42,9 @@
 (function () {
 
   function moveProgressBar(animationDelay = 0) {
-    var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
-    var getProgressWrapWidth = $('.progress-wrap').width();
+    var progressWrap = $('.progress-wrap');
+    var getPercent = (progressWrap.data('progress-percent') / 100);
+    var getProgressWrapWidth = progressWrap.width();
     var progressTotal = getPercent * getProgressWrapWidth;
     var animationLength = 100;
 
@@ -133,8 +134,10 @@ $(".btn-chose-theme").on("click", function () {
 });
 
 
-$('#tabs-nav a').on('click', function (event) {
 
+//Tabs
+
+$('#tabs-nav a').on('click', function (event) {
   event.preventDefault();
   
   $(this).closest('#tabs-nav').find('.active').removeClass('active');

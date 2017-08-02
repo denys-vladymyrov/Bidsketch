@@ -362,18 +362,18 @@ main {
     display: inline-block;
     text-transform: uppercase; }
 
-.top-nav__right {
+.section-design__right {
   position: absolute;
   right: 25px;
   -webkit-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   top: 50%; }
-  .top-nav__right > span {
+  .section-design__right > span {
     font-size: 14px;
     color: #737272; }
 
-.top-nav__right .btn-default {
+.section-design__right .btn-default {
   margin-left: 20px; }
 
 .section-design-main,
