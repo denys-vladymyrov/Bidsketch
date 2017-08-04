@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/selectric.css">
   <link rel="stylesheet" type="text/css" href="css/spectrum.css">
+  <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
 
@@ -54,19 +55,25 @@
             <ul>
               <li>
                 <div class="comment">
-                  <a href="" alt="comment">
-                    <img src="img/comment.svg" class="comment__icon" alt="comment">
+                  <a href="">
+                    <img src="img/comment.svg" class="comment__icon tooltip" alt="comment" title="Comments">
                     <div class="comment__count">
                       1
                     </div>
                   </a>
-
                 </div>
               </li>
               <li>
-                <div class="collaborators-wrap">
-                  <a href="" alt="collaborators">
-                    <img src="img/collaborators.svg" alt="collaborators">
+                <div class="collaborators">
+                  <a href="">
+                    <img src="img/collaborators.svg" class="tooltip" alt="collaborators" title="Collaborators">
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="page-break">
+                  <a href="">
+                    <img src="img/page_break.svg" class="tooltip" alt="page-break" title="Page Breaks">
                   </a>
                 </div>
               </li>
@@ -85,7 +92,7 @@
               <span>Theme Name</span>
             </button>
             <button class="btn btn-transparent customize-btn">
-              <img src="img/4.svg" alt="pencil">Customize
+              <img src="img/pencil.svg" alt="pencil">Customize
             </button>
           </div> <!-- ends top-line__center -->
 
@@ -173,13 +180,6 @@
                   </li>
                 </ul>
               </div>
-              <!--<div class="section-design__right">-->
-                <!--<button class="btn btn-transparent btn-noborder discard-btn">-->
-                  <!--<span>Discard changes</span>-->
-                <!--</button>-->
-                <!--<span>or</span>-->
-                <!--<button class="btn btn-default">Apply &amp; Close</button>-->
-              <!--</div>-->
             </div>
             <div id="tab-2" class="tab">
               <div class="section-design__left">
@@ -226,13 +226,6 @@
                   </li>
                 </ul>
               </div>
-              <!--<div class="section-design__right">-->
-                <!--<button class="btn btn-transparent btn-noborder discard-btn">-->
-                  <!--<span>Discard changes</span>-->
-                <!--</button>-->
-                <!--<span>or</span>-->
-                <!--<button class="btn btn-default">Apply &amp; Close</button>-->
-              <!--</div>-->
             </div>
 
           </div>
@@ -346,13 +339,19 @@
 <script src="libs/jquery/jquery-3.1.1.min.js"></script>
 <script src="libs/jquery.selectric.js"></script>
 <script src="libs/spectrum.js"></script>
+<script src="libs/tooltipster.bundle.min.js"></script>
 <script src="js/common.js"></script>
+
 <script>
   $('select').selectric();
   $(".color-picker").spectrum({
     color: "#f46d6c",
     preferredFormat: "hex",
     showInput: true
+  });
+  $('.tooltip').tooltipster({
+    side: "bottom",
+    theme: ['tooltipster-noir', 'tooltipster-noir-customized'],
   });
 </script>
 

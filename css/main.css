@@ -106,7 +106,7 @@ ul {
   top: 0; }
 
 .top-line__left {
-  width: 27%;
+  width: 31%;
   float: left;
   padding-left: 25px;
   -webkit-box-sizing: border-box;
@@ -128,7 +128,7 @@ ul {
 
 .top-line__center {
   line-height: 36px;
-  width: 46%;
+  width: 38%;
   float: left;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -164,13 +164,13 @@ ul {
   border-radius: 10px;
   color: #fff;
   position: absolute;
-  right: -9px;
-  top: 0;
+  right: -8px;
+  top: -4px;
   line-height: 15px; }
 
-.collaborators-wrap {
+.collaborators {
   display: inline-block;
-  margin-right: 20px; }
+  margin-right: 15px; }
 
 .btn {
   width: 125px;
@@ -588,3 +588,35 @@ main {
 
 .tabs-stage .tab:first-child {
   display: block; }
+
+.page-break {
+  margin-top: 1px;
+  margin-right: 20px;
+  margin-left: 10px; }
+  .page-break:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: -10px;
+    top: -2px;
+    width: 2px;
+    height: 14px;
+    background-color: #dbdbdb; }
+
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-box {
+  background-color: #000;
+  border: 0;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow {
+  height: 6px;
+  margin-left: -10px;
+  top: 2px;
+  width: 16px; }
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-background {
+  border-bottom-color: #000; }
+
+.tooltipster-sidetip .tooltipster-content {
+  font-size: 12px; }
