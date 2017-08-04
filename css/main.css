@@ -103,7 +103,8 @@ ul {
 .top-line-fixed {
   position: fixed;
   width: 100%;
-  top: 0; }
+  top: 0;
+  z-index: 100; }
 
 .top-line__left {
   width: 31%;
@@ -238,7 +239,18 @@ main {
   -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
-  margin-top: 128px; }
+  margin-top: 128px;
+  position: relative; }
+  main:before {
+    content: "";
+    background-image: url(../img/preview.png);
+    width: 121px;
+    height: 121px;
+    display: inline-block;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    z-index: 0; }
 
 .demo {
   background-color: #faf0c9;
