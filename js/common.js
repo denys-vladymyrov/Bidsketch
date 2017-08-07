@@ -2,13 +2,19 @@
 
 // Sticky Header
 (function () {
-  var topLine = $(".top-line");
+  var topLine = $(".top-line:not(.section-design)");
   var mainContent = $("main");
   var offSet = $(".top-line-main").offset();
   var isFixed = false;
   var topLineFees = $(".top-line-fees");
+  var header = $(".main-header");
 
   $(window).scroll(function() {
+
+
+    if($(".section-design, .theme-header").is(":visible")){
+      return;
+    }
 
     if( $(this).scrollTop() > offSet.top && offSet.top != 0) {
       topLine.addClass("top-line-fixed");
@@ -120,17 +126,35 @@
 //Events for buttons
 
 $(".customize-btn").on("click", function () {
+
+  //Check if the panel theme-header is showing, if yes, hide it
+  if($(".theme-header").is(":visible")){
+    $(".btn-chose-theme").click();
+  }
+
   $(".design-header").show();
   $(".main-header").hide();
+  $("main").addClass("main-marginTop");
 });
 
 $(".discard-btn").on("click", function () {
   $(".design-header").hide();
   $(".main-header").show();
+  $("main").removeClass("main-marginTop");
+
+  $(window).scroll();
 });
 
 $(".btn-chose-theme").on("click", function () {
   $(".theme-header").toggle();
+  $("header").toggleClass("fixed");
+
+
+  if($(".top-line").hasClass("top-line-fixed")){
+    $(".theme-header").toggleClass("theme-header-marginTop");
+  }
+
+  $(window).scroll();
 });
 
 

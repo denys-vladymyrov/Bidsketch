@@ -17,6 +17,12 @@ ul {
     list-style: none;
     float: left; }
 
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 101; }
+
 .main-wrap {
   min-width: 980px; }
 
@@ -251,6 +257,9 @@ main {
     right: -3px;
     top: -3px;
     z-index: 0; }
+
+.main-marginTop {
+  margin-top: 325px; }
 
 .demo {
   background-color: #faf0c9;
@@ -526,6 +535,12 @@ main {
 .theme-header {
   display: none; }
 
+.design-header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0; }
+
 .btn-arrow:hover:after {
   border-top-color: #a2a2a2; }
 
@@ -547,11 +562,15 @@ main {
   padding-top: 30px;
   width: 100%;
   position: absolute;
+  z-index: 100;
   background-color: #fff;
   border-top: 1px solid #f1f1f1;
   text-align: center;
   -webkit-box-shadow: -1px 3px 20px 0 rgba(0, 0, 0, 0.05);
   box-shadow: -1px 3px 20px 0 rgba(0, 0, 0, 0.05); }
+
+.theme-header-marginTop {
+  margin-top: 32px; }
 
 .theme-item {
   max-width: 170px;
